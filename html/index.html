@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <style>
+            .btn-block {
+                width: 100%;
+            }
+            .strong {
+                font-weight: bold;
+            }
+            .row{
+                margin-bottom: 0;
+            }
+        </style>
+        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" />
+    </head>
+    <body>
+        <!-- shopping cart start -->
+        <div id="shoppingCart">
+            <div class="navbar-fixed">
+                <nav class="white">
+                    <div class="nav-wrapper">
+                        <ul class="left">
+                            <li>
+                                <a href="#"><i class="material-icons red-text text-darken-3">arrow_back</i></a>
+                            </li>
+                            <li>
+                                <a href="#" class="red-text text-darken-3" style="font-size: 5vw;">My Cart</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+
+            <div class="container">
+                <h5 class="strong">Shopping Cart</h5>
+            </div>
+            <div class="">
+                <ul class="collection">
+                    <li class="collection-item row red lighten-4" style="border-style:none;">
+                        <span class="left"><a href="#"><i class="material-icons red-text text-darken-3">remove</i></a>1<a href="#!"><i class="material-icons red-text text-darken-3">add</i></a></span>
+                        <span class="col s5">Chicken Rice</span>
+                        <span class="right">RM 8.50</span>
+                    </li>
+                   
+                    <li class="collection-item row red lighten-5" style="border-style:none;">
+                        <span class="left"><a href="#"><i class="material-icons red-text text-darken-3">remove</i></a> 1 <a href="#!"><i class="material-icons red-text text-darken-3">add</i></a></span>
+                        <span class="col s5">Tuaran Mee</span>
+                        <span class="right">RM 8.50</span>
+                    </li>
+            
+                    <li class="collection-item row red lighten-4" style="border-style:none;">
+                        <span class="left"><a href="#"><i class="material-icons red-text text-darken-3">remove</i></a> 1 <a href="#!"><i class="material-icons red-text text-darken-3">add</i></a></span>
+                        <span class="col s5">Milo (Cold)</span>
+                        <span class="right">RM 4.00</span>
+                    </li>
+                    <li class="collection-item row red lighten-5" style="border-style:none;">
+                        <span class="left"><a href="#"><i class="material-icons red-text text-darken-3">remove</i></a> 2 <a href="#!"><i class="material-icons red-text text-darken-3">add</i></a></span>
+                        <span class="col s5">Lemon Tea (Cold)</span>
+                        <span class="right">RM 3.50</span>
+                    </li>
+                </ul>
+            </div>
+
+            
+            <div class="container">
+                <h5 class="strong">Your Order</h5>
+
+                <div class="card red lighten-4 z-depth-2" style="padding: 5px 10px;">
+                    <div style="padding: 5px 0px;">
+                        <span>Chicken Rice x1</span>
+                        <span class="right">RM 8.50</span>
+                    </div>
+
+                    <div style="padding: 0px 0px;">
+                        <span>Tuaran Mee x1</span>
+                        <span class="right">RM 8.50</span>
+                    </div>
+                    
+                    <div style="padding: 5px 0px;">
+                        <span>Milo (Cold) x1</span>
+                        <span class="right">RM 4.00</span>
+                    </div>
+
+                    <div style="padding: 0px 0px;">
+                        <span>Lemon Tea (Cold) x2</span>
+                        <span class="right">RM 7.00</span>
+                    </div>
+                 
+                    <div style="padding: 0px 0px;">
+                        <a href="#voucherModal" class="red-text text-darken-3 modal-trigger"><h6>Do you have a voucher?</h6></a>
+                    </div>
+                
+                    <div style="padding: 0px 0px;">
+                        <span>Subtotal </span>
+                        <span class="right">RM 28.00</span>
+                    </div>
+                    
+                    <div style="padding: 5px 0px;">
+                        <span>Discount</span>
+                        <span class="right red-text">-RM 5.00</span>
+                    </div>
+                    
+               
+                    <div style="padding-top: 5px; padding-bottom: 5px; ">
+                        <span class="strong" style="font-size:large">Total</span>
+                        <span>(incl. VAT)</span>
+                        <span class="strong right" style="font-size:large">RM 23.00</span>
+                    </div>
+
+                </div>
+
+                <br><br><br><br>
+                <a class="btn fullwidth red darken-3 btn-block white-text waves-effect waves-light">Check Out</a>
+
+                
+            </div>
+
+
+
+            <div id="voucherModal" class="modal" style="width: 90%;">
+                <div class="modal-content" style="padding: 15px;">
+                    <h5 class="strong">Voucher</h5>
+                    <p class="red-text text-darken-3">Enter your voucher code</p>
+
+                    <!-- VOUCHER CODE -->
+                    <input id="voucherCode" type="text" placeholder="makanLunch">
+
+                </div>
+                <div class="modal-footer">
+                    <a href="#!" class="red-text text-darken-3 modal-close waves-effect waves-green btn-flat">Use Voucher</a>
+                </div>
+            </div>
+
+        </div>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+        <script>
+            M.AutoInit();
+        </script>
+    </body>
+</html>
